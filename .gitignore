@@ -1,0 +1,21 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environments
+.venv/
+venv/
+
+# Environment files
+.env
+
+# SQLite database files
+*.db
+*.sqlite3
+
+# Pytest cache
+.pytest_cache/
+
+# VS Code
+.vscode/

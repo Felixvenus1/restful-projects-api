@@ -1,0 +1,16 @@
+[project]
+name = "fastapi-project-api"
+version = "0.1.0"
+description = "RESTful CRUD API with FastAPI and SQLite"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi",
+    "uvicorn",
+    "sqlalchemy",
+    "pydantic",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
