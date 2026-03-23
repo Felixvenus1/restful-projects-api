@@ -3,6 +3,7 @@ from contextlib import asynccontextmanager
 from fastapi import FastAPI
 
 from .database import Base, engine
+from .routers import projects
 
 
 @asynccontextmanager
@@ -17,6 +18,8 @@ app = FastAPI(
     description="RESTful CRUD API for project records.",
     lifespan=lifespan,
 )
+
+app.include_router(projects.router)
 
 
 @app.get("/health")

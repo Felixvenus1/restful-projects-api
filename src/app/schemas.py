@@ -21,9 +21,8 @@ class ProjectBase(BaseModel):
     )
 
 
-#class ProjectCreate(ProjectBase):
-    
-
+class ProjectCreate(ProjectBase):
+    pass
 
 class ProjectUpdate(BaseModel):
     name: str | None = Field(
