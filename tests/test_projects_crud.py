@@ -1,5 +1,4 @@
 """CRUD endpoint integration tests."""
-import pytest
 from fastapi.testclient import TestClient
 
 

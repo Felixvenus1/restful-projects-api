@@ -1,7 +1,6 @@
 """Pytest fixtures for API integration tests."""
 import pytest
-import tempfile
-import os
+
 from sqlalchemy import create_engine, event
 from sqlalchemy.orm import Session, sessionmaker
 from sqlalchemy.pool import StaticPool

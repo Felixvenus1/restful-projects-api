@@ -1,5 +1,4 @@
 """Validation error handling tests."""
-import pytest
 from fastapi.testclient import TestClient
 
 
@@ -50,7 +49,7 @@ class TestProjectNameValidation:
 
 class TestProjectDescriptionValidation:
     """Tests for project description field validation."""
-    
+
     def test_description_optional(self, client: TestClient):
         """Test that description is optional."""
         response = client.post(
