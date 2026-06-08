@@ -19,3 +19,10 @@ venv/
 
 # VS Code
 .vscode/
+
+# Coverage
+.coverage
+coverage.xml
+
+# Spec docs (not part of repo)
+BRD.md
