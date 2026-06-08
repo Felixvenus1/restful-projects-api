@@ -203,7 +203,20 @@ fastapi-project-api/
 ### Auto-Generated Documentation
 - **Swagger UI**: Visit `http://localhost:8000/docs` (interactive API explorer)
 - **ReDoc**: Visit `http://localhost:8000/redoc` (static documentation)
-- **OpenAPI JSON**: Available at `http://localhost:8000/openapi.json`
+- **OpenAPI JSON**: Available live at `http://localhost:8000/openapi.json`, and
+  committed as a snapshot at [`docs/openapi.json`](docs/openapi.json)
+  (regenerate with `python docs/export_openapi.py`).
+
+### Swagger UI Screenshot (ARTEFACT 02-D)
+
+![Swagger UI](docs/swagger_screenshot.png)
+
+Regenerate the screenshot from a headless run with:
+
+```bash
+pip install playwright && playwright install chromium
+python docs/capture_swagger.py
+```
 
 ### Validation
 - **Name**: Required, 1-120 characters
